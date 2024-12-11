@@ -1,6 +1,9 @@
 from django.shortcuts import render
 
+from users.forms import UserLoginForm
+
 def login(request):
+    form = UserLoginForm()
     context = {
         'title': 'Home - Авторизация'
     }
